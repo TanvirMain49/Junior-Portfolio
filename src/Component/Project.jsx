@@ -41,7 +41,7 @@ const Project = () => {
       ]
     return (
         <div className='md:max-w-[1240px] max-w-[1000px] mx-auto p-6 md:my-20 ' id='project'>
-             <h2 className='md:text-6xl text-3xl font-bold text-gray-200 mb-20 text-center border-b-4 border-[#0a97b0e1] md:mx-96 mx-24'>Project</h2>
+             <h2 className='md:text-6xl text-3xl font-bold text-gray-200 mb-20 text-center border-b-4 border-[#0a97b0e1] md:mx-[450px] mx-24'>Project</h2>
             {
                 projects.map((project, ind)=><ProjectCard key={ind} ind={ind} project={project}></ProjectCard> )
             }

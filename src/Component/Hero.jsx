@@ -1,6 +1,7 @@
 import { motion } from "framer-motion";
 import {
   AiFillGithub,
+  AiOutlineFacebook,
   AiOutlineGithub,
   AiOutlineInstagram,
   AiOutlineLinkedin,
@@ -80,17 +81,17 @@ const Hero = () => {
               Download CV
             </motion.a>
 
-            <div className="flex gap-6 flex-row text-2xl md:text-5xl text-[#0A97B0] z-20">
-              <motion.a whileHover={{ scale: 1.2 }} href="#">
+            <div className="flex gap-3 flex-row text-4xl md:mt-0 mt-3 ml-3 md:text-5xl text-[#0A97B0] z-20">
+              <motion.a whileHover={{ scale: 1.2 }} href="https://github.com/TanvirMain49" target="_blank">
                 <AiOutlineGithub />
               </motion.a>
 
-              <motion.a whileHover={{ scale: 1.2 }} href="#">
+              <motion.a whileHover={{ scale: 1.2 }}  href="https://www.linkedin.com/in/tanvir-mahin-801954291/" target="_blank">
                 <AiOutlineLinkedin />
               </motion.a>
 
-              <motion.a whileHover={{ scale: 1.2 }} href="#">
-                <AiOutlineInstagram />
+              <motion.a whileHover={{ scale: 1.2 }} href="https://www.facebook.com/mahin.pro.9/" target="_blank">
+                <AiOutlineFacebook />
               </motion.a>
             </div>
           </motion.div>
