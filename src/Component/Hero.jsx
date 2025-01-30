@@ -15,12 +15,12 @@ import {
   DiNodejsSmall,
   DiReact,
 } from "react-icons/di";
-import profilepic from "../assets/Picsart_25-01-05_05-12-15-841.png";
+import profilepic from "../assets/Picsart_25-01-27_01-19-25-812.png";
 
 const Hero = () => {
   return (
-    <div className="mt-36 max-w-[1200px] mx-auto relative text-gray-200">
-      <div className="grid md:grid-cols-2 place-items-center gap-12">
+    <div className="mt-24 max-w-[1200px] mx-auto relative text-gray-200">
+      <div className="grid md:grid-cols-2 place-items-center gap-8">
         <motion.div
           initial={{ opacity: 0, y: -50 }}
           whileInView={{ opacity: 1, y: 0 }}
@@ -33,7 +33,7 @@ const Hero = () => {
               1000,
               "Web Developer",
               1000,
-              "Full Stack Developer",
+              "MERN Stack Developer",
               1000,
             ]}
             speed={50}
@@ -49,7 +49,7 @@ const Hero = () => {
             className="font-bold text-gray-200 md:text-6xl text-4xl tracking-tighter mb-4"
           >
             HEY, I AM <br />
-            <span className="text-[#0A97B0]">TANVIR MAHIN</span>
+            <span className="text-[#0A97B0]">MAHINUL TANVIR MAHIN</span>
           </motion.p>
 
           <motion.p
@@ -70,7 +70,7 @@ const Hero = () => {
             className="flex flex-row gap-2"
           >
             <motion.a
-              href="https://docs.google.com/document/d/18JFstA8frQloiKuirFUhgQDIedVt08bJ6TFEY9TI51Y/edit?usp=sharing"
+              href="https://drive.google.com/file/d/1RoURCZQcgH_5X9H7aMXFw7gGyYCMEXmV/view?usp=sharing"
               target="_blank" 
               whileHover={{
                 scale: 1.05,
@@ -78,7 +78,7 @@ const Hero = () => {
               }}
               className="z-10 cursor-pointer font-bold text-gray-200 md:w-auto p-4 border border-[#0A97B0] rounded-xl hover:bg-[#0A97B0] hover:text-white transition-all duration-300"
             >
-              Download CV
+              Download Resume
             </motion.a>
 
             <div className="flex gap-3 flex-row text-4xl md:mt-0 mt-3 ml-3 md:text-5xl text-[#0A97B0] z-20">
@@ -100,7 +100,7 @@ const Hero = () => {
         {/* img */}
         <motion.img
           src={profilepic}
-          className="w-[300px] md:w-[450px]"
+          className="w-[500px] md:w-[450px]"
           initial={{ opacity: 0, scale: 0.8 }}
           whileInView={{ opacity: 1, scale: 1 }}
           viewport={{ once: true }}
