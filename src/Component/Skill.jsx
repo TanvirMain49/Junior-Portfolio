@@ -48,7 +48,7 @@ const Skill = () => {
         <h2 className="md:text-6xl text-3xl font-bold mb-9 text-center border-b-4 border-[#0a97b0e1] md:mx-64 mx-36">
           Skills
         </h2>
-        <motion.div className="flex flex-col md:flex-row justify-center md:space-x-12 ml-10 md:ml-0 space-y-8 md:space-y-0">
+        <motion.div className="flex flex-col md:flex-row justify-center  md:space-x-12 md:px-0 px-4 space-y-8 md:space-y-0">
           {skills.map((skill, index) => (
             <div
               key={index}

@@ -19,7 +19,7 @@ import profilepic from "../assets/Picsart_25-01-27_01-19-25-812.png";
 
 const Hero = () => {
   return (
-    <div className="mt-24 max-w-[1200px] mx-auto relative text-gray-200">
+    <div className="mt-24 max-w-[1200px] mx-auto md:px-0 px-4 relative text-gray-200">
       <div className="grid md:grid-cols-2 place-items-center gap-8">
         <motion.div
           initial={{ opacity: 0, y: -50 }}
@@ -112,7 +112,7 @@ const Hero = () => {
         whileInView={{ opacity: 1, y: 0 }}
         viewport={{ once: true }}
         transition={{ duration: 1, delay: 2 }}
-        className="text-5xl flex flex-row items-center justify-center px-12 md:px-0 py-20 w-full"
+        className="text-5xl flex flex-row items-center justify-center px-12 md:px-0 py-20 w-full hidden md:block"
       >
         <p className="text-gray-200 mr-6 text-nowrap font-bold">My TecSkill</p>
         <DiHtml5 className="text-orange-600 mx-2" />

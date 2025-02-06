@@ -3,7 +3,7 @@ import Reveal from "./Reval";
 
 const AboutMe = () => {
   return (
-    <div className="text-gray-200 w-8/12 mx-auto my-16" id="about">
+    <div className="text-gray-200 md:w-8/12 md:px-0 px-4 mx-auto my-16" id="about">
       <Reveal>
         <h2 className="md:text-6xl text-3xl font-bold mb-9 text-center border-b-4 border-[#0a97b0e1] md:mx-80 mx-10 ">
           About ME
