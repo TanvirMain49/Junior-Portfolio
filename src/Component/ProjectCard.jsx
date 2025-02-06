@@ -8,21 +8,44 @@ const ProjectCard = ({ project, ind }) => {
     <Reveal>
       <div
         className={`text-gray-200 flex md:flex-row flex-col ${
-          ind % 2 == 0 ? "md:flex-row-reverse" : ""
+          ind % 2 === 0 ? "md:flex-row-reverse" : ""
         } items-center justify-center gap-5 mb-16`}
       >
         <div className="w-full md:w-1/2 p-3">
           <img
             src={project.img}
-            alt=""
+            alt={project.title}
             className="w-full h-full object-cover rounded-lg shadow-lg"
           />
         </div>
 
         <div className="w-full md:w-1/2 flex flex-col justify-center space-y-2">
-          <h2 className="font-bold text-2xl mb-4 ">{project.title}</h2>
-          <p className="text-base mb-24">{project.description}</p>
-          <div className="flex items-center space-x-2 mt-20">
+          <h2 className="font-bold text-2xl mb-4">{project.title}</h2>
+          <p className="text-base mb-4">{project.description}</p>
+
+          <div className="mb-4">
+            <h3 className="font-semibold text-lg mb-2">Key Features:</h3>
+            <ul className="list-disc list-inside space-y-1">
+              {project.keyFeatures.map((feature, index) => (
+                <li key={index} className="text-gray-300">
+                  {feature}
+                </li>
+              ))}
+            </ul>
+          </div>
+
+          <div className="flex flex-wrap gap-2 mb-4">
+            {project.technologiesUsed.map((tech, index) => (
+              <span
+                key={index}
+                className="bg-[#0A97B0] text-white px-3 py-1 rounded-full text-sm shadow-md"
+              >
+                {tech}
+              </span>
+            ))}
+          </div>
+
+          <div className="flex items-center space-x-2 pt-4">
             <a
               target="_blank"
               href={project.links.site}

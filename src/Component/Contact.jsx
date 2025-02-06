@@ -36,7 +36,7 @@ const Contact = () => {
               <div>
                 <p className="text-base md:text-lg">
                   Call Me <br />
-                  <span>01816142726</span>
+                  <span>+8801816142726</span>
                 </p>
               </div>
             </div>
