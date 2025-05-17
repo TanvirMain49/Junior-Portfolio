@@ -15,7 +15,7 @@ import {
   DiNodejsSmall,
   DiReact,
 } from "react-icons/di";
-import profilepic from "../assets/Picsart_25-01-27_01-19-25-812.png";
+import profilepic from "../assets/Picsart_25-05-15_01-42-24-553.png";
 
 const Hero = () => {
   return (
@@ -70,7 +70,7 @@ const Hero = () => {
             className="flex flex-row gap-2"
           >
             <motion.a
-              href="https://drive.google.com/file/d/1RoURCZQcgH_5X9H7aMXFw7gGyYCMEXmV/view?usp=sharing"
+              href="https://drive.google.com/file/d/19TTVKe3lyPEHxe2qCdIovmmyBRvbxkvH/view?usp=sharing"
               target="_blank" 
               whileHover={{
                 scale: 1.05,
@@ -78,10 +78,10 @@ const Hero = () => {
               }}
               className="z-10 cursor-pointer font-bold text-gray-200 md:w-auto p-4 border border-[#0A97B0] rounded-xl hover:bg-[#0A97B0] hover:text-white transition-all duration-300"
             >
-              Download Resume
+              View Resume
             </motion.a>
 
-            <div className="flex gap-3 flex-row text-4xl md:mt-0 mt-3 ml-3 md:text-5xl text-[#0A97B0] z-20">
+            <div className="flex gap-2 flex-row text-4xl md:mt-0 mt-3 ml-3 md:text-5xl text-[#0A97B0] z-20">
               <motion.a whileHover={{ scale: 1.2 }} href="https://github.com/TanvirMain49" target="_blank">
                 <AiOutlineGithub />
               </motion.a>
@@ -100,7 +100,7 @@ const Hero = () => {
         {/* img */}
         <motion.img
           src={profilepic}
-          className="w-[500px] md:w-[450px]"
+          className="w-[500px] md:w-[600px] mb-20"
           initial={{ opacity: 0, scale: 0.8 }}
           whileInView={{ opacity: 1, scale: 1 }}
           viewport={{ once: true }}

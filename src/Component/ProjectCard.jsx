@@ -1,6 +1,5 @@
 import React from "react";
 import { AiOutlineGithub } from "react-icons/ai";
-import { Link } from "react-scroll";
 import Reveal from "./Reval";
 
 const ProjectCard = ({ project, ind }) => {
@@ -20,7 +19,7 @@ const ProjectCard = ({ project, ind }) => {
         </div>
 
         <div className="w-full md:w-1/2 flex flex-col justify-center space-y-2">
-          <h2 className="font-bold text-2xl mb-4">{project.title}</h2>
+          <h2 className="font-bold text-4xl mb-4">{project.title}</h2>
           <p className="text-base mb-4">{project.description}</p>
 
           <div className="mb-4">
